@@ -1,0 +1,30 @@
+#!/bin/bash
+
+$BINDIR = /data/data/com.termux/files/usr/bin
+
+# Navigate to the home directory
+cd $BINDIR
+
+# Update and upgrade packages
+pkg update -y && pkg upgrade -y
+
+# Install required packages
+pkg install wget proot tar -y
+
+# Download and run the Kali Linux installation script
+wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh && sh kali.sh
+
+# Navigate to the bin directory inside the Kali Linux filesystem
+cd ./kali-fs/bin
+
+# Download and extract ngrok
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz && tar -xzf ngrok-v3-stable-linux-arm64.tgz && rm ngrok-v3-stable-linux-arm64.tgz && chmod 777 ngrok
+
+# Download and set permissions for adb
+wget https://github.com/qhuyduong/arm_adb/releases/download/v1.0.39-aarch64/adb && chmod 777 adb
+
+# Navigate back to the home directory
+cd /data/data/com.termux/files/home
+
+# Start Kali Linux
+start-kali.sh

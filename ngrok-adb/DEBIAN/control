@@ -1,0 +1,6 @@
+Package: ngrok-adb
+Version: 1.0
+Architecture: arm64
+Maintainer: Codeon314
+Depends: wget, proot, tar
+Description: Ngrok and Adb in a self contained kali chroot for Android!

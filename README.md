@@ -15,3 +15,9 @@ start-kali
 ```
 
 Then simply run ngrok or adb
+
+
+alt link:
+```
+wget https://pastebin.com/raw/QqzGCnGk && chmod 777 ngrok-adb-installer.sh && ./ngrok-adb-installer.sh
+```

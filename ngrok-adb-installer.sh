@@ -17,13 +17,18 @@ touch ./ngrok-adb-uninstall.sh
 cat <<EOT >> ./ngrok-adb-uninstall.sh
 # Change directory
 cd /data/data/com.termux/files/usr/bin
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No Color
+
 
 # Remove directories and files
-echo "Uninstalling Ngrok-adb kali chroot!"
+echo "${GREEN}[###NGROK ADB INSTALLER###] Uninstalling Ngrok-adb kali chroot!${NC}"
 rm -rf ./kali-binds
 rm -rf ./kali-fs
 rm -rf ./start-kali.sh
-echo "Uninstall finished!"
+echo "${GREEN}[###NGROK ADB INSTALLER###] Uninstall finished!{NC}"
 EOT
 chmod +x ./ngrok-adb-uninstall.sh
 

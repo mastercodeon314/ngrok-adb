@@ -22,7 +22,6 @@ GREEN='\033[0;32m'
 YELLOW='\033[0;33m'
 NC='\033[0m' # No Color
 
-
 # Remove directories and files
 printf "${GREEN}[###NGROK ADB INSTALLER###] Uninstalling Ngrok-adb kali chroot!\n${NC}"
 rm -rf ./kali-binds

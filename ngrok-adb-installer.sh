@@ -27,7 +27,7 @@ NC='\033[0m' # No Color
 printf "${GREEN}[###NGROK ADB INSTALLER###] Uninstalling Ngrok-adb kali chroot!\n${NC}"
 rm -rf ./kali-binds
 rm -rf ./kali-fs
-rm -rf ./start-kali.sh
+rm -rf ./start-kali
 printf "${GREEN}[###NGROK ADB INSTALLER###] Uninstall finished!\n${NC}"
 rm -- "$0"
 EOT
@@ -40,6 +40,7 @@ printf "${GREEN}[###NGROK ADB INSTALLER###] Executing kali installerr script\n${
 chmod 777 ./kali.sh
 ./kali.sh
 rm -rf ./kali.sh
+mv ./start-kali.sh ./start-kali
 
 printf "${GREEN}[###NGROK ADB INSTALLER###] Navigating to kali-fs/bin\n${NC}"
 cd /data/data/com.termux/files/usr/bin/kali-fs/bin
@@ -54,4 +55,4 @@ printf "${GREEN}[###NGROK ADB INSTALLER###] Navigating back to termux home direc
 cd 
 
 printf "${GREEN}[###NGROK ADB INSTALLER###] Ngrok-adb Install complete! Starting kali chroot!\n${NC}"
-start-kali.sh
+start-kali

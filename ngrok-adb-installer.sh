@@ -13,8 +13,8 @@ printf "${GREEN}[###NGROK ADB INSTALLER###] Going to termux bin directory\n${NC}
 cd /data/data/com.termux/files/usr/bin
 
 printf "${GREEN}[###NGROK ADB INSTALLER###] Making uninstaller script\n${NC}"
-touch ./ngrok-adb-uninstall.sh
-cat <<EOT >> ./ngrok-adb-uninstall.sh
+touch ./ngrok-adb-uninstall
+cat <<EOT >> ./ngrok-adb-uninstall
 # Change directory
 cd /data/data/com.termux/files/usr/bin
 RED='\033[0;31m'
@@ -30,7 +30,7 @@ rm -rf ./kali-fs
 rm -rf ./start-kali.sh
 printf "${GREEN}[###NGROK ADB INSTALLER###] Uninstall finished!\n${NC}"
 EOT
-chmod +x ./ngrok-adb-uninstall.sh
+chmod +x ./ngrok-adb-uninstall
 
 printf "${GREEN}[###NGROK ADB INSTALLER###] Downloading\n${NC}"
 wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh 

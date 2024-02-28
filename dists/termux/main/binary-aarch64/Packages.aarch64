@@ -1,6 +1,6 @@
 Package: ngrok-adb
 Version: 1.0
-Architecture: arm64
+Architecture: aarch64
 Maintainer: mastercodeon314
 Installed-Size: 100
 Depends: wget, proot, tar

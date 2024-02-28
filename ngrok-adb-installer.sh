@@ -29,7 +29,7 @@ rm -rf ./kali-binds
 rm -rf ./kali-fs
 rm -rf ./start-kali
 printf "${GREEN}[###NGROK ADB INSTALLER###] Uninstall finished!\n${NC}"
-rm -- "$0"
+rm -rf ./ngrok-adb-uninstall
 EOT
 chmod +x ./ngrok-adb-uninstall
 

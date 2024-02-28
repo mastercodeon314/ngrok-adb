@@ -13,6 +13,27 @@ echo "NGROK ADB INSTALLER Navigating to termux bin dir"
 # Navigate to the termux bin directory
 cd /data/data/com.termux/files/usr/bin
 
+echo "NGROK ADB INSTALLER Making uninstaller script"
+
+# Create a new script file
+touch ./ngrok-adb_uninstall.sh
+
+# Add commands to the script file
+cat <<EOT >> ./ngrok-adb_uninstall.sh
+# Change directory
+cd /data/data/com.termux/files/usr/bin
+
+# Remove directories and files
+rm -rf ./kali-binds
+rm -rf ./kali-fs
+rm -rf ./kali.sh
+rm -rf ./kali.sh.1
+rm -rf ./start-kali.sh
+EOT
+
+# Make the script executable
+chmod +x ./ngrok-adb_uninstall.sh
+
 echo "NGROK ADB INSTALLER Downloading"
 
 # Download and run the Kali Linux installation script

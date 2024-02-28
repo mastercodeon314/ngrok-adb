@@ -7,3 +7,11 @@ Uninstall command:
 ```
 ngrok-adb-uninstall
 ```
+
+Usage:
+Start kali by the following:
+```
+start-kali
+```
+
+Then simply run ngrok or adb

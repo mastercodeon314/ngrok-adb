@@ -1,0 +1,9 @@
+Package: ngrok-adb
+Version: 1.0
+Architecture: arm64
+Maintainer: mastercodeon314
+Installed-Size: 100
+Depends: wget, proot, tar
+Description: ngrok-adb package for Termux
+ ngrok-adb is a tool for exposing local adb servers behind NATs and firewalls to the public internet over secure ngrok tunnels.
+Homepage: https://github.com/mastercodeon314/ngrok-adb

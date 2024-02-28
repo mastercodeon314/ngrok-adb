@@ -1,12 +1,12 @@
 echo "NGROK ADB INSTALLER Updating..."
 
 # Update and upgrade packages
-pkg update -y && pkg upgrade
+#pkg update -y && pkg upgrade
 
 echo "NGROK ADB INSTALLER Installing wget proot tar"
 
 # Install required packages
-pkg install wget proot tar -y
+#pkg install wget proot tar -y
 
 echo "NGROK ADB INSTALLER Navigating to termux bin dir"
 
@@ -19,6 +19,8 @@ echo "NGROK ADB INSTALLER Downloading"
 wget https://raw.githubusercontent.com/EXALAB/AnLinux-Resources/master/Scripts/Installer/Kali/kali.sh 
 
 echo "NGROK ADB INSTALLER Executing kali installerr script"
+
+chmod 777 ./kali.sh
 
 ./kali.sh
 
@@ -42,7 +44,7 @@ wget https://github.com/qhuyduong/arm_adb/releases/download/v1.0.39-aarch64/adb 
 echo "NGROK ADB INSTALLER Navigating back to termux home directory"
 
 # Navigate back to the home directory
-cd /data/data/com.termux/files/home
+cd 
 
 echo "NGROK ADB INSTALLER Ngrok-adb Install complete! Starting kali chroot!"
 

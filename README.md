@@ -1,6 +1,6 @@
 One shot install command:
 ```
-wget https://raw.githubusercontent.com/mastercodeon314/ngrok-adb/master/ngrok-adb-installer.sh && chmod 777 ngrok-adb-installer.sh && ./ngrok-adb-installer.sh
+pkg update && pkg upgrade && pkg install wget && wget https://raw.githubusercontent.com/mastercodeon314/ngrok-adb/master/ngrok-adb-installer.sh && chmod 777 ngrok-adb-installer.sh && ./ngrok-adb-installer.sh
 ```
 
 Uninstall command:
@@ -15,9 +15,3 @@ start-kali
 ```
 
 Then simply run ngrok or adb
-
-
-alt link:
-```
-wget https://pastebin.com/raw/QqzGCnGk && mv ./QqzGCnGk ./ngrok-adb-installer.sh && chmod 777 ngrok-adb-installer.sh && ./ngrok-adb-installer.sh
-```

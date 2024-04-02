@@ -45,7 +45,7 @@ printf "${GREEN}[###NGROK ADB INSTALLER###] Navigating to kali-fs/bin\n${NC}"
 cd /data/data/com.termux/files/usr/bin/kali-fs/bin
 
 printf "${GREEN}[###NGROK ADB INSTALLER###] Downloading and extracting ngrok to kali-fs/bin\n${NC}"
-wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm64.tgz && tar -xzf ngrok-v3-stable-linux-arm64.tgz && rm ngrok-v3-stable-linux-arm64.tgz && chmod 777 ngrok
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-arm.tgz && tar -xzf ngrok-v3-stable-linux-arm.tgz && rm ngrok-v3-stable-linux-arm.tgz && chmod 777 ngrok
 
 printf "${GREEN}[###NGROK ADB INSTALLER###] Downloading and extracting adb to kali-fs/bin, as well as chmod 777 the binary\n${NC}"
 wget https://github.com/qhuyduong/arm_adb/releases/download/v1.0.39-aarch64/adb && chmod 777 adb
